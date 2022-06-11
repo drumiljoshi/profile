@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+//     $(function() {
+// function pulsate(element) {
+//     $(element || this).delay(150).fadeOut(1000).delay(150).fadeIn(1000, pulsate); 
+// }
+//     pulsate($('#anim1'))
+//     pulsate($("#anim2"))
+// });
+(function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 100,
+				child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+				  items.each(function() {$(this).hide();})
+				  if(!o.child){var next = $(obj).children(':first');
+				  }else{var next = o.child;
+				  }
+				  $(next).fadeIn(o.fadeSpeed, function() {
+						$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+							var next = $(this).next();
+							if (next.length == 0){
+									next = $(obj).children(':first');
+							}
+							$(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+						})
+					});
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('#anim').rotaterator({fadeSpeed:1000, pauseSpeed:300});
+ });
+
+ 
+  </script>
+  <script>
+        $('[data-toggle=collapse]').hover(function (e) {
+    $('[data-toggle=collapse]').parent('li').removeClass('active');
+    $(this).parent('li').toggleClass('active');
+    $($(this).data('target')).collapse('show').fadeIn(fast);
+    });
+
+    $('.collapse').on('shown.bs.collapse', function (e) {
+    $('.collapse').not(this).removeClass('in').fadeOut(fast);
+    });
+  </script>
+<style>
+    body{
+        background: url("data.gif");
+        background-size: cover;
+
+    }
+    .title1{
+        z-index: -10;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: italic;
+        height: 480px;
+        text-align: center;
+        color: aqua;
+        
+   }
+   nav{
+       color: white;
+   }
+   #thoughts{
+       text-align: center;
+       margin-left: 25%;
+       margin-right: 25%;
+       font-size: large;
+   }
+  #kame{
+      font-size: 0.755rem;
+  }
+.navbar-nav .nav-item {
+    border-radius:50px;
+    order: none;
+    font-size: 16px;    
+    transition: 0.3s;
+    }
+.navbar-nav .nav-item:hover{
+    background-color: navy;
+}
+
+#submenu {
+    background-color: #e7e7e7;
+    margin-bottom:20px;
+}
+
+.collapsing {
+    display:none;
+
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm navbar-light fixed-top" id="navigator">
+        <a class="navbar-brand" href="#" title="Home"><i class="fa fa-home fa-2x"></i><br></i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certification.html">Research Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education and Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+        </div>
+    </nav>
+    <div class="title">
+        <div class="title1"><h1 id="first_h" style="color: aqua;"><center>Hello there, <div id="anim"><div id="anim1">I am Drumil Joshi</div>
+                        <div id="anim2">People recognize me as a Data Scientist</div>
+                        <div id="anim3">I do research in Machine Learning</div></div></center>
+        </h1>
+        </div>
+        <div id="thoughts" style="color: aqua;">
+            <p>Every engineer is a problem-solver at heart, and unfortunately, there's a lot of problems present today that are left to us to address.
+                Opportunity does not come knocking twice. A lot of us who look for ways to dive into our fields of interest, often have a compass and not a map.
+            </p>
+        </div>
+        
+    </div>    
+</body>
+</html>

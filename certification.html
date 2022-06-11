@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+ 
+<style>
+    body{
+        background: url("backgroundgif.gif");
+        background-size: cover;
+        margin-bottom: 10%;
+
+    }
+    .title1{
+        z-index: -10;
+        position: relative;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        /* font-style: italic; */
+        /* height: 480px; */
+        padding: 10%;
+        text-align: left;
+        color: navy;
+    h1{
+        font-style: bold;  
+    }
+    h4{
+        text-transform: uppercase;
+    }
+        
+   }
+   /* nav{
+       color: black;
+   } */
+   #thoughts{
+    position: relative;
+       text-align: left;
+       margin-left: 10%;
+       margin-right: 30%;
+       font-size: large;
+   }
+  #kame{
+      font-size: 0.755rem;
+  }
+.navbar-nav .nav-item {
+    border-radius:50px;
+    order: none;
+    font-size: 16px;    
+    transition: 0.3s;
+    }
+.navbar-nav .nav-item:hover{
+    background-color: aqua;
+    color: white;
+}
+
+#submenu {
+    background-color: #e7e7e7;
+    margin-bottom:20px;
+}
+
+.collapsing {
+    display:none;
+
+}
+#navigator{
+    background-color: aliceblue;
+    opacity: 1; 
+    filter:(opacity=100);  
+}
+#qual1{
+    border-radius: 100px;
+    border-style: solid;
+    display: relative;
+    margin-right: 25%;
+    margin-left: 2%;
+    text-align: justify;
+    padding: 40px;
+    color: navy;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navigator">
+        <a class="navbar-brand" href="index1.html" title="Home"><i class="fa fa-home fa-2x"></i><br></i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Research Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education and Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- <div class="title">
+        
+        <div class="title1"><h5 style="text-transform: uppercase;">About Myself</h5><br>
+            <img src="dj.JPG" style="float: right; width: 250px; padding: 10px; height: 250px;"></img>
+            <h1 style="text-transform: capitalize;">Hello there! I am Drumil Joshi</h1>
+        </div>
+        <div id="thoughts" style="color: navy;">
+            <p>I'm an MS DS grad student at Indiana University Bloomington with a passion for science, technology, and analysis.
+                I did research in Machine Learning in my undergrad and currently apply machine learning models on structured data and derive meaningful insights.
+                Please contact for any project or research collaboration.<br><br>
+                <u>My skillsets include:</u><br><br>
+                a)<i><u>Programming:</u></i> SQL, Tableau, R, MongoDB, Python (Numpy, Pandas, Scikit Learn, Seaborn, Azure ML Studio, Folium)<br>
+               <br>b)<i><u>Learning:</u></i> Data Preprocessing, Regression Modeling, Random Forest, kNN Classifier, K-means Clustering, Feature Extraction (PCA, Factor Analysis), XGBoost, Support Vector Machine<br>
+                <br>c)<i><u>Statistics:</u></i> Inferential Statistics, Hypothesis Testing (A/B Testing), Regression Analysis<br>
+                <br>d)<i><u>Soft Skills:</u></i> Team Building, Initiative Driven, Team Player, Gardening, Reading, Travelling
+                               
+            </p>
+            <br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                  Programming(85%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="97.2" aria-valuemin="0" aria-valuemax="100" style="width:97.2%; background-color: red;">
+                  Learning(97.2%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: green;">
+                  Statistics(90%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: violet;">
+                  Soft Skills(80%)
+                </div>
+              </div>
+              </div>
+        </div>
+        
+    </div>     -->
+    <div class="title1">
+        <h1 style="text-transform: capitalize;">Research Papers</h1>
+    </div>
+    <div id="qual1">
+       <b>Gopani, M., Trivedi, H., Lotia, H., Joshi, D. & Pal, R. Computation of Amazon Stock Price for the next decade using ARIMA and SARIMAX Model. International Journal of Computer Science Engineering and Information Technology Research (2022). 
+    </b>
+    <br>
+    <i>Link:</i> <b><a href="www.tjprc.org/publishpapers/2-14-1644302189-8IJCSEITRJUN20228.pdf">www.tjprc.org/publishpapers/2-14-1644302189-8IJCSEITRJUN20228.pdf</a></b> 
+    </div>
+    <br>
+    <div id="qual1">
+        <b>Jala, S., Adhia, N., Kothari, M., Joshi, D. & Pal, R.  Supply Chain Demand Forecasting using Applied Machine Learning and Feature Engineering. International Journal of Computer Science Engineering and Information Technology Research (2022). 
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="http://www.tjprc.org/publishpapers/2-14-1652176198-14IJCSEITRJUN202214.pdf">2-14-1652176198-14IJCSEITRJUN202214.pdf (tjprc.org)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Shah, A., Patel, J., Chokshi, D., Bhave, E., Joshi, D. & Karamchandani, D. S. Prediction System Design for Monitoring the Health of Developing Infants from Cardiotocography Using Statistical Machine Learning. Design Engineering (2022).
+     </b>
+     <br>
+     <i>Link:</i> <b><a href=" http://www.thedesignengineering.com/index.php/DE/article/view/8706"> Prediction System Design for Monitoring the Health of Developing Infants from Cardiotocography Using Statistical Machine Learning | Design Engineering (thedesignengineering.com)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Sayed, F., Joshi, D., Bhave, E., Chokshi, D. & Pal, R. Projection of African Economy for the Next Decade using Linear Algebra and Applied Machine Learning. Design Engineering (2022). 
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href=" http://www.thedesignengineering.com/index.php/DE/article/view/8704"> Projection of African Economy for the Next Decade using Linear Algebra and Applied Machine Learning | Design Engineering (thedesignengineering.com)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Khambati, A., Joshi, D., Sayed, F., Pinto, K. & Karamchandani, D. S. Delve into the Realms with 3D forms:Visualization System Aid Design in an IoT Driven World. Springer’s Lecture Notes on Data Engineering and Communication Technologies (2022). 
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="https://link.springer.com/chapter/10.1007/978-981-16-6601-8_31">Delve into the Realms with 3D Forms: Visualization System Aid Design in an IOT-Driven World | SpringerLink</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Joshi, D., Sayed, F., Jain, H., Beri, J., Bandi, Y. & Karamchandani, D. S. A Cloud Native Machine Learning based Approach for Detection and Impact of Cyclone and Hurricanes on Coastal Areas of Pacific and Atlantic Ocean. Journal of University of Shanghai for Science and Technology (2021).
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="https://jusst.org/a-cloud-native-machine-learning-based-approach-for-detection-and-impact-of-cyclone-and-hurricanes-on-coastal-areas-of-pacific-and-atlantic-ocean/">A Cloud Native Machine Learning based Approach for Detection and Impact of Cyclone and Hurricanes on Coastal Areas of Pacific and Atlantic Ocean - Journal of University of Shanghai for Science and Technology (jusst.org)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Joshi, D., Parikh, A., Mangla, R., Sayed, F. & Karamchandani, D. S. AI Based Nose for Trace of Churn in Assessment of Captive Customers. Turkish Online Journal of Qualitative Inquiry (2021). 
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="https://www.tojqi.net/index.php/journal/article/view/1193">AI Based Nose for Trace of Churn in Assessment of Captive Customers | Turkish Online Journal of Qualitative Inquiry (tojqi.net)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Joshi, D., Sayed, F., Saraf, A., Sutaria, A. & Karamchandani, D. S. Elements of Nature Optimized into Smart Energy Grids using Machine Learning. Design Engineering (2021). 
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="http://www.thedesignengineering.com/index.php/DE/article/view/1892">Elements of Nature Optimized into Smart Energy Grids using Machine Learning | Design Engineering (thedesignengineering.com)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Khambati, A., Pinto, K., Joshi, D. & Karamchandani, D. S. Innovative Smart Water Management System Using Artificial Intelligence. Turkish Journal of Computer and Mathematics Education (2021). 
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="https://turcomat.org/index.php/turkbilmat/article/view/1895">Innovative Smart Water Management System Using Artificial Intelligence | Turkish Journal of Computer and Mathematics Education (TURCOMAT)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Joshi, D., Sayed, F., Beri, J. & Pal, R. An Efficient Supervised Machine Learning Model Approach for Forecasting of Renewable Energy to Tackle Climate Change. International Journal of Computer Science Engineering and Information Technology Research (2021). 
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="www.tjprc.org/view_paper.php?id=15034">www.tjprc.org/view_paper.php?id=15034</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Saluja, D. S., Joshi, D., Jain, H., Dhirawani, P., Parekh, R., Doshi, N. & Pal, R. Energy Star Score Predictor Using Data Science. DJ Strike Annual Magazine (2021). 
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="https://djsceietesf.com/dj-strike/">DJ STRIKE – iete – sf (djsceietesf.com)</a></b> 
+     </div>
+     <br>
+     <div id="qual1">
+        <b>Joshi, D., Sayed, F. & Beri, J. Bengaluru House Pricing Model Based on Machine-Learning. International Journal of Innovative Research in Science, Engineering and Technology (2020).
+
+     </b>
+     <br>
+     <i>Link:</i> <b><a href="http://www.ijirset.com/upload/2020/october/74_Bengaluru_NC1.pdf">74_Bengaluru_NC1.pdf (ijirset.com)</a></b> 
+     </div>
+     <br>
+     
+</body>
+</html> 

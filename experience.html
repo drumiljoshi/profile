@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+ 
+<style>
+    body{
+        background: url("backgroundgif.gif");
+        background-size: cover;
+        margin-bottom: 10%;
+
+    }
+    .title1{
+        z-index: -10;
+        position: relative;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        /* font-style: italic; */
+        /* height: 480px; */
+        padding: 10%;
+        text-align: left;
+        color: navy;
+    h1{
+        font-style: bold;  
+    }
+    h4{
+        text-transform: uppercase;
+    }
+        
+   }
+   /* nav{
+       color: black;
+   } */
+   #thoughts{
+    position: relative;
+       text-align: left;
+       margin-left: 10%;
+       margin-right: 30%;
+       font-size: large;
+   }
+  #kame{
+      font-size: 0.755rem;
+  }
+.navbar-nav .nav-item {
+    border-radius:50px;
+    order: none;
+    font-size: 16px;    
+    transition: 0.3s;
+    }
+.navbar-nav .nav-item:hover{
+    background-color: aqua;
+    color: white;
+}
+
+#submenu {
+    background-color: #e7e7e7;
+    margin-bottom:20px;
+}
+
+.collapsing {
+    display:none;
+
+}
+#navigator{
+    background-color: aliceblue;
+    opacity: 1; 
+    filter:(opacity=100);  
+}
+#qual1{
+    border-radius: 100px;
+    border-style: solid;
+    display: relative;
+    margin-right: 25%;
+    margin-left: 2%;
+    text-align: justify;
+    padding: 40px;
+    color: navy;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navigator">
+        <a class="navbar-brand" href="index1.html" title="Home"><i class="fa fa-home fa-2x"></i><br></i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certification.html">Research Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education and Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- <div class="title">
+        
+        <div class="title1"><h5 style="text-transform: uppercase;">About Myself</h5><br>
+            <img src="dj.JPG" style="float: right; width: 250px; padding: 10px; height: 250px;"></img>
+            <h1 style="text-transform: capitalize;">Hello there! I am Drumil Joshi</h1>
+        </div>
+        <div id="thoughts" style="color: navy;">
+            <p>I'm an MS DS grad student at Indiana University Bloomington with a passion for science, technology, and analysis.
+                I did research in Machine Learning in my undergrad and currently apply machine learning models on structured data and derive meaningful insights.
+                Please contact for any project or research collaboration.<br><br>
+                <u>My skillsets include:</u><br><br>
+                a)<i><u>Programming:</u></i> SQL, Tableau, R, MongoDB, Python (Numpy, Pandas, Scikit Learn, Seaborn, Azure ML Studio, Folium)<br>
+               <br>b)<i><u>Learning:</u></i> Data Preprocessing, Regression Modeling, Random Forest, kNN Classifier, K-means Clustering, Feature Extraction (PCA, Factor Analysis), XGBoost, Support Vector Machine<br>
+                <br>c)<i><u>Statistics:</u></i> Inferential Statistics, Hypothesis Testing (A/B Testing), Regression Analysis<br>
+                <br>d)<i><u>Soft Skills:</u></i> Team Building, Initiative Driven, Team Player, Gardening, Reading, Travelling
+                               
+            </p>
+            <br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                  Programming(85%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="97.2" aria-valuemin="0" aria-valuemax="100" style="width:97.2%; background-color: red;">
+                  Learning(97.2%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: green;">
+                  Statistics(90%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: violet;">
+                  Soft Skills(80%)
+                </div>
+              </div>
+              </div>
+        </div>
+        
+    </div>     -->
+    <div class="title1">
+        <h1 style="text-transform: capitalize;">My Experience</h1>
+    </div>
+    <div id="qual1">
+       <b><u>I) Research Assistant at Dwarkadas J Sanghvi College of Engineering
+( August 2021-May 2022)</u></b>
+<img src="djs.JPG" style="float: right; width: 250px; padding: 20px; height: 250px;"></img>
+<br>
+• <b>Undergraduate researcher at Department of Electronics and Telecommunications of DJ Sanghvi College of Engineering led by Dr. Sunil H Karamchandani.</b>
+<br>
+• <b>Thesis Title: </b><b><i><u>OPTIMIZING BANK'S FINANCIAL RISK BY FORECASTING FUTURE NPAs USING MACHINE LEARNING</i></u></b> 
+<br>
+-> <i>Performed simulations with careful attention to financial feature details and documentation.</i>
+<br>
+-> <i>Analyzed 6 Different Advanced ML Algorithms on 5 different evaluation metrics.</i>
+<br>
+• <b>Led the designs for Monitoring the Health of Developing Infants from Cardiotocography Using Statistical Machine Learning and AI-Based Nose for Trace of Churn in Assessment of Captive Customers</b>
+<br>
+• <b>Mentored 20+ students for publication of research papers in IEEE and Springer Conferences and Journal.</b>
+<br>
+• <b>Co-Authored and published 7 Research Papers on solving real-time problems using Machine Learning</b>
+<br>
+• <b>Received Letter of Recommendation from Dr. Sunil Karamchandani</b>
+
+
+    </div>
+    <br>
+    <div id="qual1">
+        <img src="f13.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>II) AWS Cloud Intern - F13 Technologoies
+        (June 2021 - July 2021)</u></b>
+        
+        <br>
+        <b>• AWS Partner: Accreditation (Technical)
+         AWS Cloud Practitioner Essentials</b>
+        <br>
+         <b>• AWS Partner: Cloud Economics Accreditation</b>
+        
+ 
+ 
+     </div>
+     <br>
+     <div id="qual1">
+        <img src="talenthome.JPG" style="float: right; width: 200px; padding: 20px; height: 200px;"></img>
+        <b><u>III) Junior Data Scientist at TalentHome Solutions LLP
+            (January 2021 - June 2021)</u></b>
+            <br>
+            <b>• Received a Letter of Reference for commendable work accomplishments.</b>
+            <br>
+            <b>• Forecasting Using Time Series Modelling (ARIMA, SARIMA) and anticipated the increase of RMSE value by 10 percent.</b>
+            <br>
+            <b>• Initiated A Loan Approval Prediction System design for evaluation of loan instituted to decrease loss by 5 percent.</b>
+            <br>
+            <b>• Revised Real-Time Application of The Augmented-Dickey Fuller Test to make the p-value less than 0.05.</b>
+            <br>
+            <b>• Analysis Of Different Machine Learning Algorithms and observed an increase of 4 percent Accuracy and corresponding.</b>
+            
+     </div>
+     <br>
+     <div id="qual1">
+        <img src="ai.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>IV) Artificial Intelligence Intern at CodeQuest.AI
+            (October 2020 - November 2020)
+            </u></b>
+        <br>
+        <b>• Researched On Face Recognition System using Convolutional Neural Networks.</b>
+        <br>
+         <b>• Devised Customer Churn Model using Machine Learning and formulated the statistical accuracy metrics
+        </b>
+     </div>
+     <br>
+     <div id="qual1">
+        <img src="datalogy.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>V) Data Science Intern at Datalogy Pvt Ltd
+            (June 2020 - July 2020)
+            </u></b>
+        <br>
+        <b>• Simplified Bengaluru House Pricing Model Based On Machine-Learning anticipating the facts like BHK, Sq.Feet etc.
+        </b>
+        <br>
+         <b>• Authorized USA-911 Call Data Analysis and Reporting and made use of Folium Library to implement Real Time Graph
+        </b>
+     </div>
+     <br>
+     <div id="qual1">
+        <img src="technocolab.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>V) Data Science Intern at Technocolabs Pvt Ltd
+            (April 2020 - May 2020)
+            </u></b>
+        <br>
+        <b>• Developed Customer Intention Predictions using ML and Deployed on Streamlit to increase Product sales by 20-25%
+        </b>
+        <br>
+         <b>• Operated Predictive Model for Credit Card Default Prediction for a Portuguese Bank Data Set.
+        </b>
+     </div>
+</body>
+</html> 
