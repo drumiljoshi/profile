@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+ 
+<style>
+    body{
+        background: url("backgroundgif.gif");
+        background-size: cover;
+        margin-bottom: 10%;
+
+    }
+    .title1{
+        z-index: -10;
+        position: relative;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        /* font-style: italic; */
+        /* height: 480px; */
+        padding: 10%;
+        text-align: left;
+        color: navy;
+    h1{
+        font-style: bold;  
+    }
+    h4{
+        text-transform: uppercase;
+    }
+        
+   }
+   /* nav{
+       color: black;
+   } */
+   #thoughts{
+    position: relative;
+       text-align: left;
+       margin-left: 10%;
+       margin-right: 30%;
+       font-size: large;
+   }
+  #kame{
+      font-size: 0.755rem;
+  }
+.navbar-nav .nav-item {
+    border-radius:50px;
+    order: none;
+    font-size: 16px;    
+    transition: 0.3s;
+    }
+.navbar-nav .nav-item:hover{
+    background-color: aqua;
+    color: white;
+}
+
+#submenu {
+    background-color: #e7e7e7;
+    margin-bottom:20px;
+}
+
+.collapsing {
+    display:none;
+
+}
+#navigator{
+    background-color: aliceblue;
+    opacity: 1; 
+    filter:(opacity=100);  
+}
+#qual1{
+    border-radius: 100px;
+    border-style: solid;
+    display: relative;
+    margin-right: 25%;
+    margin-left: 2%;
+    text-align: justify;
+    padding: 40px;
+    color: navy;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navigator">
+        <a class="navbar-brand" href="index.html" title="Home"><i class="fa fa-home fa-2x"></i><br></i></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certification.html">Research Papers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education and Certifications</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+        </div>
+    </nav>
+    <!-- <div class="title">
+        
+        <div class="title1"><h5 style="text-transform: uppercase;">About Myself</h5><br>
+            <img src="dj.JPG" style="float: right; width: 250px; padding: 10px; height: 250px;"></img>
+            <h1 style="text-transform: capitalize;">Hello there! I am Drumil Joshi</h1>
+        </div>
+        <div id="thoughts" style="color: navy;">
+            <p>I'm an MS DS grad student at Indiana University Bloomington with a passion for science, technology, and analysis.
+                I did research in Machine Learning in my undergrad and currently apply machine learning models on structured data and derive meaningful insights.
+                Please contact for any project or research collaboration.<br><br>
+                <u>My skillsets include:</u><br><br>
+                a)<i><u>Programming:</u></i> SQL, Tableau, R, MongoDB, Python (Numpy, Pandas, Scikit Learn, Seaborn, Azure ML Studio, Folium)<br>
+               <br>b)<i><u>Learning:</u></i> Data Preprocessing, Regression Modeling, Random Forest, kNN Classifier, K-means Clustering, Feature Extraction (PCA, Factor Analysis), XGBoost, Support Vector Machine<br>
+                <br>c)<i><u>Statistics:</u></i> Inferential Statistics, Hypothesis Testing (A/B Testing), Regression Analysis<br>
+                <br>d)<i><u>Soft Skills:</u></i> Team Building, Initiative Driven, Team Player, Gardening, Reading, Travelling
+                               
+            </p>
+            <br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                  Programming(85%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="97.2" aria-valuemin="0" aria-valuemax="100" style="width:97.2%; background-color: red;">
+                  Learning(97.2%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: green;">
+                  Statistics(90%)
+                </div>
+              </div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: violet;">
+                  Soft Skills(80%)
+                </div>
+              </div>
+              </div>
+        </div>
+<div id="qual2">
+        <h3 style="text-transform: capitalize;">Projects</h3>
+    <br>
+    </div>
+     <div id="qual1">
+        <img src="coursera.JPG" style="float: right; width: 125px; padding: 20px; height: 125px;"></img>
+        <b><u>🚀) Optimizing Bank’s Financial NPAs Using Machine Learning
+            (Python, ML Azure Studio)
+            </u></b>
+        <br>
+        <b>• Analyzed BharatPe’s Merchant Loan Vending System and deviced loan default predicition system design for Banks and NBFCs
+        </b>
+        <br>
+         <b>• Accumulated Inputs from Industry and Market Leaders on the software pipeline and Evaluated all the ML Algorithms on 6 Different performance Metrics.
+        </b>
+     </div>
+    <br>
+     <div id="qual1">
+        <img src="technocolab.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>🚀) Smart Water Management System
+            (Python, MIT App Inventor, Google Firebase)
+            </u></b>
+        <br>
+        <b>• Interpreted live imminent data from a wireless microcontroller(ESP8266) and displayed it on Android Application developed on MIT APP Inventor to track day-to-day devices to the users
+        </b>
+        <br>
+         <b>• Data Storage system was designed in Google Firebase and the system followed norms stated by Government Of India
+        </b>
+     </div>
+    <br>
+     <div id="qual1">
+        <img src="technocolab.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>🚀) Interactive Dashboard for UK Customer Bank Data
+            (Tableau)
+            </u></b>
+        <br>
+        <b>• Compared the region wise average balance in-terms of its job classifications.Classified Region
+        </b>
+        <br>
+         <b>• Created a global date range parameter. Include interactive filters for Job classifications and Highlighters for Region in the final dashboard
+        </b>
+     </div>
+
+ <br>
+     <div id="qual1">
+        <img src="technocolab.JPG" style="float: right; width: 150px; padding: 20px; height: 100px;"></img>
+        <b><u>🚀) IBM Employee Attrition
+            (: Python, Jupyter Environment)
+            </u></b>
+        <br>
+        <b>• Interpreted Decision-Tree and Random Forest Algorithms Using Importance Plots and tuned hyper-parameters to imporve Accuracy by 5 percent.
+        </b>
+        <br>
+         <b>• Created Interactive GUI Components in Jupyter notebooks using widgets.
+        </b>
+     </div>
+</body>
+</html> 
